@@ -1,0 +1,72 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class='no-js lt-ie9 lt-ie8 lt-ie7'> <![endif]-->
+<!--[if IE 7]>         <html class='no-js lt-ie9 lt-ie8'> <![endif]-->
+<!--[if IE 8]>         <html class='no-js lt-ie9'> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class='no-js' data-ng-app='jamApp'> <!--<![endif]-->
+<head>
+  <base href='/' >
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width'>
+  <meta name='keywords' property="og:keywords" content="Wallex">
+  <meta name='description' property="og:description" content="Wallex">
+  <!-- <title>Wallex</title> -->
+  <meta name='copyright' content='Wallex'>
+  <meta name='author' content='Aimee'>
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+  <link rel='icon' href='favicon.ico' type='image/x-icon'>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel='stylesheet' href='assets/pure/pure.min.css'>
+  <link rel='stylesheet' href='assets/pure/grids-responsive-min.css'>
+  <link rel='stylesheet' href='assets/style.min.css'>
+  <!-- endbuild -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header id='header' ng-controller='scrollCtrl'>
+    <div class='wrapper pure-g'>
+      <a class='pure-u-1-4' href="#/" id='logo'>Logo</a>
+      <div id='h-main' class='pure-u-1 pure-u-md-3-4 pure-u-lg-3-4 pure-u-xl-3-4' ng-show='showHeader === true' data-ng-class="{active: toggleMenuList === true}">
+        <div>
+          <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="about" du-scrollspy>About</a>
+          <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="features" du-scrollspy>Features</a>
+          <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="howitworks" du-scrollspy>How it works</a>
+          <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="sectors" du-scrollspy>Sectors</a>
+          <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="reviews" du-scrollspy>Reviews</a>
+          <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="contact" du-scrollspy>Contact</a>
+          <a ng-click='toggleMenuList = !toggleMenuList; scroll()' href='#/faq'>FAQ</a>
+        </div>
+      </div>
+      <div ng-click='toggleMenuList = !toggleMenuList' id='menu-btn' class='pure-u-1 pure-u-md-3-4 pure-u-lg-3-4 pure-u-xl-3-4'><span class='icon-menu'></span></div>
+      <div ng-show='showHeader === false' class='pure-u-1 pure-u-md-3-4 pure-u-lg-3-4 pure-u-xl-3-4'>
+        <a id='close' ng-click='closePage()'><span class='icon-cross'></span></a>
+      </div>
+    </div>
+  </header>
+  <!-- Add your site or application content here -->
+  <div id='container' class='pure-g' ng-view ng-cloak></div>
+
+  <!-- google analytics -->
+
+  
+  <!-- 3rd party -->
+  <script src='js/angular/angular.min.js'></script>
+  <script src='js/angular/angular-route.min.js'></script>
+  <script src='js/angular/angular-resource.min.js'></script>
+  <script src='js/angular/angular-cookies.min.js'></script>
+  <script src='js/angular/angular-sanitize.min.js'></script>
+  <script src='js/angular/angular-touch.min.js'></script>
+  <script src='js/angular/angular-animate.min.js'></script>
+  <script src='js/angular-scroll.js'></script>
+  <script src='assets/jquery-1.12.2.min.js'></script>
+  <script src='assets/swipe.js'></script>
+
+  <!-- App -->
+  <script src='scripts/app.js'></script>
+  <script src='scripts/controllers.js'></script>
+  <script src='scripts/services.js'></script>
+
+</body>
+</html>
