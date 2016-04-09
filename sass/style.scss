@@ -374,9 +374,11 @@ p {
 }
 
 .feature-box {
-  > a,
   > div {
     padding: 1.5em 0;
+  }
+  >a {
+    padding: 1em 0 0;
   }
   > div {
     .f-header {
@@ -400,7 +402,6 @@ p {
   }
   > a {
     .f-header {
-      // color: $blue;
       font-weight: 400;
       margin: 0 auto;
       margin-bottom: .5em;
@@ -835,6 +836,17 @@ footer {
  * MOBILE 
 *****************/
 
+@media screen and (min-width: 48em) {
+  .swipe-wrap-content {
+    display: none;
+  }
+  .d-contents {
+    padding-top: 0 !important;
+    > div {
+      display: inline-block;
+    }
+  }
+}
 @media screen and (max-width: 48em) {
   .wrapper { 
     padding: 0 1em;
@@ -846,12 +858,15 @@ footer {
   }
   .feature-box {
     > div {
-      padding: 2em;
+      padding: 1em;
+      p {
+        max-width: 100%;
+      }
     }
   }
   p {
     &.desc {
-      max-width: 80%;
+      max-width: 100%;
     }
   }
   header {
@@ -929,14 +944,14 @@ footer {
         transition: all .2s linear;
       }
     }
-
-
   }
-
-
-
-
   #hero-r {
+    display: none;
+  }
+  .swipe-wrap-content {
+    display: block;
+  }
+  .d-contents {
     display: none;
   }
     
@@ -995,6 +1010,7 @@ footer {
   width:100%;
   position: relative;
 }
+
 
  // faq table
  table {
