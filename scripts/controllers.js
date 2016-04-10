@@ -81,6 +81,10 @@ app
           }
         }
 
+        $scope.submit = function() {
+          alert('Oops, something is wrong. Try this later !')
+        }
+
 
     }
 );
