@@ -4,29 +4,29 @@ $green: #5fc274;
 $d-green: #389E4E;
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?x9emx1');
-  src:  url('../fonts/icomoon.eot?x9emx1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?x9emx1') format('truetype'),
-    url('../fonts/icomoon.woff?x9emx1') format('woff'),
-    url('../fonts/icomoon.svg?x9emx1#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?d6uusv');
+    src:    url('../fonts/icomoon.eot?d6uusv#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?d6uusv') format('truetype'),
+        url('../fonts/icomoon.woff?d6uusv') format('woff'),
+        url('../fonts/icomoon.svg?d6uusv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-bookmark:before {
@@ -71,6 +71,9 @@ $d-green: #389E4E;
 .icon-flow-tree:before {
     content: "\e910";
 }
+.icon-open-book:before {
+    content: "\e902";
+}
 .icon-attachment:before {
     content: "\e911";
 }
@@ -92,6 +95,9 @@ $d-green: #389E4E;
 .icon-clock:before {
     content: "\e917";
 }
+.icon-cog:before {
+    content: "\e922";
+}
 .icon-credit-card:before {
     content: "\e918";
 }
@@ -110,6 +116,9 @@ $d-green: #389E4E;
 .icon-database:before {
     content: "\e91c";
 }
+.icon-edit:before {
+    content: "\e946";
+}
 .icon-eye:before {
     content: "\e91d";
 }
@@ -118,6 +127,9 @@ $d-green: #389E4E;
 }
 .icon-globe:before {
     content: "\e91f";
+}
+.icon-grid:before {
+    content: "\e947";
 }
 .icon-heart-outlined:before {
     content: "\e920";
@@ -128,17 +140,14 @@ $d-green: #389E4E;
 .icon-help-with-circle:before {
     content: "\e901";
 }
-.icon-help:before {
-    content: "\e902";
-}
-.icon-info:before {
-    content: "\e922";
-}
 .icon-laptop:before {
     content: "\e923";
 }
 .icon-line-graph:before {
     content: "\e924";
+}
+.icon-list:before {
+    content: "\e948";
 }
 .icon-location-pin:before {
     content: "\e925";
@@ -166,6 +175,9 @@ $d-green: #389E4E;
 }
 .icon-mobile:before {
     content: "\e92d";
+}
+.icon-new-message:before {
+    content: "\e949";
 }
 .icon-paper-plane:before {
     content: "\e92e";
@@ -223,6 +235,9 @@ $d-green: #389E4E;
 }
 .icon-users:before {
     content: "\e940";
+}
+.icon-v-card:before {
+    content: "\e94a";
 }
 .icon-wallet:before {
     content: "\e941";
@@ -551,7 +566,7 @@ header {
   background-image: url(../images/logo.png);
   background-position: 0 center;
   background-repeat: no-repeat;
-  background-size: 74px auto;
+  background-size: 106px 65px;
   text-indent: -999em;
   height: 80px;
   a {
@@ -1034,4 +1049,30 @@ footer {
 
 .pure-table-odd td{
   background-color: #E1F5E5;
+}
+
+
+.regs > h2 {
+  color: $blue;
+  margin-top: 2em;
+  text-align: center;
+}
+.reg-h {
+  background: url(../images/register_line.png) center center;
+  background-repeat-x: initial;
+  background-repeat-y: no-repeat;
+  color: $blue;
+  text-decoration: underline;
+}
+
+.reg {
+  background: url(../images/register_bg.png) center center no-repeat;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  padding: 0.55em;
+  color: #fff;
+  position: relative;
+  top: .65em;
+  text-decoration-color: $blue;
 }
