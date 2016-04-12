@@ -319,7 +319,7 @@ body {
 }
 
 ::-webkit-scrollbar { 
-  display: none; 
+  // display: none; 
 }
 
 a {
@@ -705,7 +705,10 @@ section {
   // width: 50%;
 }
 
-
+#about-desc {
+  margin: 0 auto;
+  max-width: 80%;
+}
 
 // features
 #features,
