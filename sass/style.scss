@@ -865,10 +865,21 @@ footer {
       display: inline-block;
     }
   }
+  .reg-h {
+    background: url(../images/register_line.png) center center;
+    background-repeat-x: initial;
+    background-repeat-y: no-repeat;
+    color: $blue;
+    text-decoration: underline;
+  }
 }
 @media screen and (max-width: 48em) {
   #logo {
     background-size: 72px 44px;
+  }
+  .reg-h {
+    background: transparent;
+
   }
 
   .wrapper { 
@@ -1064,13 +1075,7 @@ footer {
   margin-top: 2em;
   text-align: center;
 }
-.reg-h {
-  background: url(../images/register_line.png) center center;
-  background-repeat-x: initial;
-  background-repeat-y: no-repeat;
-  color: $blue;
-  text-decoration: underline;
-}
+
 
 .reg {
   background: url(../images/register_bg.png) center center no-repeat;
