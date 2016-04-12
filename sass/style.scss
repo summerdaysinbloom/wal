@@ -391,13 +391,11 @@ p {
 }
 
 .feature-box {
-  > div {
-    padding: 1.5em 0;
-  }
   >a {
     padding: 1em 0 0;
   }
   > div {
+    padding: 1.5em 0;
     .f-header {
       // color: $blue;
       font-weight: 400;
@@ -407,7 +405,7 @@ p {
       span {
         display: block;
         font-size: 1.4em;
-        margin-bottom: .5em;
+        margin-bottom: 1em !important;
       }
     }
     p {
@@ -754,7 +752,7 @@ section {
 
 // features
 #features,
-#sectors {
+#howitworks {
   background-color: #F1F1F1;
 }
 
@@ -915,14 +913,20 @@ footer {
   }
 }
 @media screen and (max-width: 48em) {
+  #about-desc {
+    max-width: 100%;
+  }
   .feature-box-left {
     > div {
+      padding: 1em 0 0;
       height: auto;
       p {
         padding-bottom: 0;
+        width: 100%;
       }
       .f-header {
         font-size: 1em;
+        padding-top: .3em;
         &.no-line {
           border-top: 1px solid #ddd;
         }
