@@ -405,7 +405,22 @@ p {
       span {
         display: block;
         font-size: 1.4em;
-        margin-bottom: 1em !important;
+        margin-bottom: .5em;
+      }
+    }
+    .f-header-align{
+      font-weight: 400;
+      margin: 0 auto;
+      margin-bottom: 1.5em;
+      text-align: left;
+      span {
+        display: inline;
+        font-size: 1.4em;
+        margin-bottom: .5em;
+        position: relative;
+        top: 6px;
+        margin-right: .6em;
+        left: 10px;
       }
     }
     p {
@@ -965,12 +980,36 @@ footer {
   }
   .feature-box {
     > div {
-      padding: 1em;
+      padding: 1em 0;
+      .f-header {
+        span {
+          margin-bottom: 1em;
+        }
+      }
       p {
         max-width: 100%;
       }
     }
   }
+
+  .feature-box {
+    > div {
+      .f-header-align {
+        font-weight: 400;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        text-align: left;
+        span {
+          left: 0;
+        }
+      }
+    }
+  }
+  dd {
+    margin-left: .5em;
+  }
+
+
   p {
     &.desc {
       max-width: 100%;
