@@ -316,10 +316,11 @@ body {
   background: #fff;
   color: $d-blue;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { 
-  display: none;
+  // display: none;
 }
 
 a {
