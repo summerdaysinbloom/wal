@@ -864,6 +864,10 @@ footer {
   }
 }
 @media screen and (max-width: 48em) {
+  #logo {
+    background-size: 72px 44px;
+  }
+
   .wrapper { 
     padding: 0 1em;
     h1 {
