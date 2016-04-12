@@ -417,10 +417,24 @@ p {
   }
   > a {
     .f-header {
+      color: $d-blue;
       font-weight: 400;
       margin: 0 auto;
       margin-bottom: .5em;
       text-align: center;
+      position: relative;
+      &:after{
+        border-bottom: 3px solid $d-blue;
+        content: " ";
+        height: 0;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: 1.6em;
+        width: 80px;
+      }
+
       span {
         display: block;
         font-size: 1.4em;

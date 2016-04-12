@@ -68,7 +68,7 @@ app
         });
 
         $scope.swiper = function(sel) {
-          console.log('swiper')
+          
           if(sel == 'cash') {
             $scope.featureId = 1;
             mySwipe.slide(0,400)
