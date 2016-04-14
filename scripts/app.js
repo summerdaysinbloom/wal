@@ -1,7 +1,7 @@
 'use strict';
 
 /* App Module */
-var app = angular.module('jamApp', [
+var app = angular.module('wallexApp', [
     'ngRoute',
     'ngControllers',
     'ngServices',
@@ -37,16 +37,6 @@ app
   }
 ]);
 
-// var faq = angular.element(document.getElementById('faq'));
-
-//           $timeout(function() {
-//             $scope.faq = function() {
-//             $document.scrollToElementAnimated(faq);
-//           }
-
-//           }, 100)
-
-
 app
 .config(['$routeProvider', '$locationProvider', 
   function($routeProvider, $locationProvider) {
@@ -64,23 +54,23 @@ app
     .when('/sectors/importer-and-exporters', {
       templateUrl: 'views/importer-and-exporters.html',
       controller: 'sectorsImportCtrl',
-      // title: 'Wallex',
-      // keywords: 'Wallex',
-      // description: 'Wallex'
+      title: 'Wallex | importer and exporters',
+      keywords: 'Wallex about importer and exporters',
+      description: 'Wallex importer and exporters'
     })
     .when('/sectors/online-sellers', {
       templateUrl: 'views/online-sellers.html',
       controller: 'onlineSellersCtrl',
-      // title: 'Wallex',
-      // keywords: 'Wallex',
-      // description: 'Wallex'
+      title: 'Wallex | online sellers',
+      keywords: 'Wallex about online sellers',
+      description: 'Wallex about online sellers'
     })
     .when('/faq', {
       templateUrl: 'views/faq.html',
       controller: 'faqCtrl',
-      // title: 'Wallex',
-      // keywords: 'Wallex',
-      // description: 'Wallex'
+      title: 'Wallex | FAQ',
+      keywords: 'Wallex FAQ',
+      description: 'Wallex FAQ'
     })
     .otherwise({
       redirectTo: '/'
