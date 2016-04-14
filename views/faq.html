@@ -17,7 +17,7 @@
 			<h2 class='pure-u-1'>Payments</h2>
 			<a class='pure-u-1 faq' ng-click="faqId2 = !faqId2" ng-init='faqId2 = false'>
 				<div>
-					<h3>Why should I use Wallex for payments?
+					<h3 data-ng-class="{'active': faqId2 === true}">Why should I use Wallex for payments?
 					<span data-ng-if='faqId2 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId2 === true' class='icon-minus'></span>
 					</h3>
@@ -27,7 +27,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId3 = !faqId3" ng-init='faqId3 = false'>
 				<div>
-					<h3>What currencies can I pay in?
+					<h3 data-ng-class="{'active': faqId3 === true}">What currencies can I pay in?
 					<span data-ng-if='faqId3 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId3 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId3 == true' class='answer pure-u-1'>
@@ -37,7 +37,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId4 = !faqId4" ng-init='faqId4 = false'>
 				<div>
-					<h3>How much does Wallex charge?
+					<h3 data-ng-class="{'active': faqId4 === true}">>How much does Wallex charge?
 					<span data-ng-if='faqId4 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId4 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId4 == true' class='answer pure-u-1'>
@@ -47,7 +47,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId5 = !faqId5" ng-init='faqId5 = false'>
 				<div>
-					<h3>How does Wallex earn by charging so little fees?
+					<h3 data-ng-class="{'active': faqId5 === true}">>How does Wallex earn by charging so little fees?
 					<span data-ng-if='faqId5 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId5 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId5 == true' class='answer pure-u-1'>
@@ -57,7 +57,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId6 = !faqId6" ng-init='faqId6 = false'>
 				<div>
-					<h3>How long does a payment take? 
+					<h3 data-ng-class="{'active': faqId6 === true}">>How long does a payment take? 
 					<span data-ng-if='faqId6 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId6 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId6 == true' class='answer pure-u-1'>
@@ -67,7 +67,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId7 = !faqId7" ng-init='faqId7 = false'>
 				<div>
-					<h3>Do I have to convert and make a payment at the same time?
+					<h3 data-ng-class="{'active': faqId7 === true}">>Do I have to convert and make a payment at the same time?
 					<span data-ng-if='faqId7 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId7 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId7 == true' class='answer pure-u-1'>
@@ -78,7 +78,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId8 = !faqId8" ng-init='faqId8 = false'>
 				<div>
-					<h3>Why must I upload an invoice?
+					<h3 data-ng-class="{'active': faqId8 === true}">>Why must I upload an invoice?
 					<span data-ng-if='faqId8 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId8 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId8 == true' class='answer pure-u-1'>
@@ -89,7 +89,7 @@
 			<h2 class='pure-u-1'>Balances</h2>
 			<a class='pure-u-1 faq' ng-click="faqId9 = !faqId9" ng-init='faqId9 = false'>
 				<div>
-					<h3>Why would I want to have a balance with Wallex?
+					<h3 data-ng-class="{'active': faqId9 === true}">>Why would I want to have a balance with Wallex?
 					<span data-ng-if='faqId9 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId9 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId9 == true' class='answer pure-u-1'>
@@ -99,7 +99,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId10 = !faqId10" ng-init='faqId10 = false'>
 				<div>
-					<h3>Are my balances safe with Wallex?
+					<h3 data-ng-class="{'active': faqId10 === true}">>Are my balances safe with Wallex?
 					<span data-ng-if='faqId10 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId10 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId10 == true' class='answer pure-u-1'>
@@ -110,7 +110,7 @@
 			<h2 class='pure-u-1'>Financing</h2>
 			<a class='pure-u-1 faq' ng-click="faqId11 = !faqId11" ng-init='faqId11 = false'>
 				<div>
-					<h3>What kind of financing does Wallex provide?
+					<h3 data-ng-class="{'active': faqId11 === true}">What kind of financing does Wallex provide?
 					<span data-ng-if='faqId11 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId11 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId11 == true' class='answer pure-u-1'>
@@ -120,7 +120,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId12 = !faqId12" ng-init='faqId12 = false'>
 				<div>
-					<h3>How much financing can you give?
+					<h3 data-ng-class="{'active': faqId12 === true}">How much financing can you give?
 					<span data-ng-if='faqId12 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId12 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId12 == true' class='answer pure-u-1'>
@@ -130,7 +130,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId13 = !faqId13" ng-init='faqId13 = false'>
 				<div>
-					<h3>Does my business qualify for financing?
+					<h3 data-ng-class="{'active': faqId13 === true}">Does my business qualify for financing?
 					<span data-ng-if='faqId13 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId 13=== true' class='icon-minus'></span></h3>
 					<div ng-show='faqId13 == true' class='answer pure-u-1'>
@@ -140,7 +140,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId14 = !faqId14" ng-init='faqId14 = false'>
 				<div>
-					<h3>How does a transaction flow?
+					<h3 data-ng-class="{'active': faqId14 === true}">How does a transaction flow?
 					<span data-ng-if='faqId14 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId14 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId14 == true' class='answer pure-u-1'>
@@ -158,7 +158,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId15 = !faqId15" ng-init='faqId15 = false'>
 				<div>
-					<h3>How do I apply for financing?
+					<h3 data-ng-class="{'active': faqId15 === true}">How do I apply for financing?
 					<span data-ng-if='faqId15 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId15 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId15 == true' class='answer pure-u-1'>
@@ -168,7 +168,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId16 = !faqId16" ng-init='faqId16 = false'>
 				<div>
-					<h3>Does Wallex run a credit check before offering funding?
+					<h3 data-ng-class="{'active': faqId16 === true}">Does Wallex run a credit check before offering funding?
 					<span data-ng-if='faqId16 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId16 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId16 == true' class='answer pure-u-1'>
@@ -178,7 +178,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId17 = !faqId17" ng-init='faqId17 = false'>
 				<div>
-					<h3>Do I have to provide security or a guarantee on the funds?
+					<h3 data-ng-class="{'active': faqId17 === true}">Do I have to provide security or a guarantee on the funds?
 					<span data-ng-if='faqId17 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId17 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId17 == true' class='answer pure-u-1'>
@@ -188,7 +188,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId18 = !faqId18" ng-init='faqId18 = false'>
 				<div>
-					<h3>What documentation do I need to provide?
+					<h3 data-ng-class="{'active': faqId18 === true}">What documentation do I need to provide?
 					<span data-ng-if='faqId18 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId18 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId18 == true' class='answer pure-u-1'>
@@ -198,7 +198,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId19 = !faqId19" ng-init='faqId19 = false'>
 				<div>
-					<h3>Can I use Wallex’s solution to pay all my suppliers?
+					<h3 data-ng-class="{'active': faqId19 === true}">Can I use Wallex’s solution to pay all my suppliers?
 					<span data-ng-if='faqId19 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId19 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId19 == true' class='answer pure-u-1'>
@@ -208,7 +208,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId20 = !faqId20" ng-init='faqId20 = false'>
 				<div>
-					<h3>How long does it take to set up the facility?
+					<h3 data-ng-class="{'active': faqId20 === true}">How long does it take to set up the facility?
 					<span data-ng-if='faqId20 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId20 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId20 == true' class='answer pure-u-1'>
@@ -218,7 +218,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId21 = !faqId21" ng-init='faqId21 = false'>
 				<div>
-					<h3>How long will it take for the fund to be paid?
+					<h3 data-ng-class="{'active': faqId21 === true}">How long will it take for the fund to be paid?
 					<span data-ng-if='faqId21 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId21 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId21 == true' class='answer pure-u-1'>
@@ -228,7 +228,7 @@
 			</a>
 			<a class='pure-u-1 faq' ng-click="faqId22 = !faqId22" ng-init='faqId22 = false'>
 				<div>
-					<h3>Can I repay in stages?
+					<h3 data-ng-class="{'active': faqId22 === true}">Can I repay in stages?
 					<span data-ng-if='faqId22 === false' class='icon-plus'></span>
 					<span data-ng-if='faqId22 === true' class='icon-minus'></span></h3>
 					<div ng-show='faqId22 == true' class='answer pure-u-1'>
@@ -247,6 +247,6 @@
 				</div>
 			</a> -->
 		</div>
-    <!--  -->
+    
   </div>
 </section>
