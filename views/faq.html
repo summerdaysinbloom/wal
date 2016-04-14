@@ -1,90 +1,252 @@
 <section class='pure-u-1 page'>
   <div class='wrapper'>
     <h1>FAQ</h1>
-    <h2>Currencies and Fees</h2>
-    <table class="pure-table">
-			<thead>
-			  <tr>
-			    <th>Currencies</th>
-			    <th>Pre-fund Fees</th>
-			    <th>Post-fund Fees</th>
-			    <th>Admin Charges</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr class="pure-table-odd">
-			    <td class='align-left'>USD</td>
-			    <td>0.50%</td>
-			    <td>0.60%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr>
-			    <td class='align-left'>EUR</td>
-			    <td>0.50%</td>
-			    <td>0.60%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr class="pure-table-odd">
-			    <td class='align-left'>AUD</td>
-			    <td>0.70%</td>
-			    <td>0.84%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr>
-			    <td class='align-left'>GBP</td>
-			    <td>0.50%</td>
-			    <td>0.60%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr class="pure-table-odd">
-			    <td class='align-left'>JPY</td>
-			    <td>1.50%</td>
-			    <td>1.80%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr>
-			    <td class='align-left'>IDR</td>
-			    <td>2.00%</td>
-			    <td>2.40%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr class="pure-table-odd">
-			    <td class='align-left'>MYR</td>
-			    <td>2.00%</td>
-			    <td>2.40%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr>
-			    <td class='align-left'>PHP</td>
-			    <td>1.00%</td>
-			    <td>1.20%</td>
-			    <td>3</td>
-			  </tr>
-			  <tr class="pure-table-odd">
-			    <td class='align-left'>THB</td>
-			    <td>1.50%</td>
-			    <td>1.80%</td>
-			    <td>3</td>
-			  </tr>
-				<tr>
-			    <td class='align-left'>CNY</td>
-			    <td>2.00%</td>
-			    <td>2.40%</td>
-			    <td>8</td>
-			  </tr>
-			  <tr class="pure-table-odd">
-			    <td class='align-left'>INR</td>
-			    <td>1.00%</td>
-			    <td>1.20%</td>
-			    <td>8</td>
-			  </tr>
-			  <tr>
-			    <td class='align-left'>HKD</td>
-			    <td>0.50%</td>
-			    <td>0.60%</td>
-			    <td>8</td>
-			  </tr>
-			</tbody>
-		</table>
+		<div class='pure-g'>
+			<h2 class='pure-u-1'>FAQ</h2>
+			<a class='pure-u-1 faq' ng-click="faqId1 = !faqId1" ng-init='faqId1 = false'>
+				<div>
+					<h3 data-ng-class="{'active': faqId1 === true}">What is Wallex?
+					<span data-ng-if='faqId1 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId1 === true' class='icon-minus'></span>
+					</h3>
+					<div ng-show='faqId1 == true' class='answer pure-u-1'>
+					<p>The internet has improved our lives in many ways but yet corporate payments remain left behind in the form of old and clunky banking systems. Wallex aims to provide you with a digital and powerful treasury and financing solution.</p><p>We allow customers to make spot conversions, forward hedging as well as to make immediate and scheduled payments to your payees.</p>
+					<p>With all your transactions under one roof, you unlock a trove of transaction and conversion data for you to analyze and streamline your operations and maximize profitability.</p></div>
+				</div>
+			</a>
+			<h2 class='pure-u-1'>Payments</h2>
+			<a class='pure-u-1 faq' ng-click="faqId2 = !faqId2" ng-init='faqId2 = false'>
+				<div>
+					<h3>Why should I use Wallex for payments?
+					<span data-ng-if='faqId2 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId2 === true' class='icon-minus'></span>
+					</h3>
+					<div ng-show='faqId2 == true' class='answer pure-u-1'>
+					<p>When you make payments with the banks, not only are you charged a high processing fee, you are also charged a wide FX spread.</p><p>With Wallex, we give you access to rates and fees that can slash your transaction costs by as much as 70%.</p></div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId3 = !faqId3" ng-init='faqId3 = false'>
+				<div>
+					<h3>What currencies can I pay in?
+					<span data-ng-if='faqId3 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId3 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId3 == true' class='answer pure-u-1'>
+						<p>You may refer to this list. (Currencies and Fees.)</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId4 = !faqId4" ng-init='faqId4 = false'>
+				<div>
+					<h3>How much does Wallex charge?
+					<span data-ng-if='faqId4 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId4 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId4 == true' class='answer pure-u-1'>
+						<p>Wallex obtains the interbank FX rates and pass it on to our customers. We only charge a small processing fee to get by.</p><p>You may refer to this list. (Currencies and Fees.)</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId5 = !faqId5" ng-init='faqId5 = false'>
+				<div>
+					<h3>How does Wallex earn by charging so little fees?
+					<span data-ng-if='faqId5 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId5 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId5 == true' class='answer pure-u-1'>
+						<p>We believe that FX rates will have no place in a world that is as globalized as ours now. We aim to generate profits from other verticals like financing and payment processing.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId6 = !faqId6" ng-init='faqId6 = false'>
+				<div>
+					<h3>How long does a payment take? 
+					<span data-ng-if='faqId6 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId6 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId6 == true' class='answer pure-u-1'>
+						<p>You can expect your funds to reach in 1-3 working days upon our receipt of your funds when you make a payment.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId7 = !faqId7" ng-init='faqId7 = false'>
+				<div>
+					<h3>Do I have to convert and make a payment at the same time?
+					<span data-ng-if='faqId7 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId7 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId7 == true' class='answer pure-u-1'>
+						<p>No. You may convert first, and choose to make a payment later. Upon conversion, you will see your balance in the converted currency and you may use that balance for payments whenever you need to.</p>
+						<p>For customers who want to make a quick 2-in-1 conversion and payment, they may do so via our website.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId8 = !faqId8" ng-init='faqId8 = false'>
+				<div>
+					<h3>Why must I upload an invoice?
+					<span data-ng-if='faqId8 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId8 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId8 == true' class='answer pure-u-1'>
+						<p>Wallex only processes payments and require an invoice to proof that each transaction is a payment for goods or services.</p>
+					</div>
+				</div>
+			</a>
+			<h2 class='pure-u-1'>Balances</h2>
+			<a class='pure-u-1 faq' ng-click="faqId9 = !faqId9" ng-init='faqId9 = false'>
+				<div>
+					<h3>Why would I want to have a balance with Wallex?
+					<span data-ng-if='faqId9 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId9 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId9 == true' class='answer pure-u-1'>
+						<p>Wallex allows you to hold balances in multiple different currencies. This enables you to hedge your foreign currency needs in advance and protect your business against unnecessary FX losses.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId10 = !faqId10" ng-init='faqId10 = false'>
+				<div>
+					<h3>Are my balances safe with Wallex?
+					<span data-ng-if='faqId10 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId10 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId10 == true' class='answer pure-u-1'>
+						<p>Wallex operates a Stored Value Facility (SVF) under the Payments Systems Oversight Act by the Monetary Authority of Singapore (MAS). All customer funds are kept segregated </p>
+					</div>
+				</div>
+			</a>
+			<h2 class='pure-u-1'>Financing</h2>
+			<a class='pure-u-1 faq' ng-click="faqId11 = !faqId11" ng-init='faqId11 = false'>
+				<div>
+					<h3>What kind of financing does Wallex provide?
+					<span data-ng-if='faqId11 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId11 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId11 == true' class='answer pure-u-1'>
+						<p>We provide short-term trade financing for payments made via our electronic platform. Provide us with your invoice and we can make the payment for you first.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId12 = !faqId12" ng-init='faqId12 = false'>
+				<div>
+					<h3>How much financing can you give?
+					<span data-ng-if='faqId12 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId12 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId12 == true' class='answer pure-u-1'>
+						<p>As a rule of thumb, we provide financing up to 5-8 times the balance you hold with us, capped at a maximum of USD 1,000,000. Some customers combine multiple smaller invoices/purchases into single larger transactions. The credit period depends on your individual circumstances and can be up to 150 days.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId13 = !faqId13" ng-init='faqId13 = false'>
+				<div>
+					<h3>Does my business qualify for financing?
+					<span data-ng-if='faqId13 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId 13=== true' class='icon-minus'></span></h3>
+					<div ng-show='faqId13 == true' class='answer pure-u-1'>
+						<p>Right now we accept buyers from Singapore with above USD 1 million in annual revenues and USD 100,000 of net assets and/or shareholder funds. As a general guideline, we look for a minimum two years’ healthy trading record, and up-to-date statutory and management accounts. Our finance is for any industry sector.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId14 = !faqId14" ng-init='faqId14 = false'>
+				<div>
+					<h3>How does a transaction flow?
+					<span data-ng-if='faqId14 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId14 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId14 == true' class='answer pure-u-1'>
+						<p>The Trade Finance solution is a simple five-step process:</p>
+						<p>Step 1 – The buyer registers with Wallex and establishes a credit line.</p>
+						<p>Step 2 – The buyer and supplier agree transaction details and the manufacturer registers with Wallex.</p>
+						<p>Step 3 – The buyer accepts the goods.</p>
+						<p>Step 4 – Wallex pays 100% of the invoice value to the supplier.</p>
+						<p>Step 5 – The buyer settles the invoice with Wallex up to 120 days later.</p>
+						<p>Once a credit line is established between your business and Wallex, you can access the facility by presenting Wallex an invoice and the relevant financing documents. Wallex will then confirm the details of the invoice with your Supplier.</p>
+						<p>When you receive the goods and accept their quality, Wallex will make the payment directly to your Supplier in the currency specified in the invoice. Repayments will then be due to Wallex after 30-120 days from the date of the payment.</p>
+						<p>This system enables you to better control your trade cycle and provides the necessary credit without interfering with your trading relationships.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId15 = !faqId15" ng-init='faqId15 = false'>
+				<div>
+					<h3>How do I apply for financing?
+					<span data-ng-if='faqId15 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId15 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId15 == true' class='answer pure-u-1'>
+						<p>Fill out an application form or contact us directly. We’ll then discuss your needs in an initial call and negotiate on your behalf with a range of credit insurers and funders.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId16 = !faqId16" ng-init='faqId16 = false'>
+				<div>
+					<h3>Does Wallex run a credit check before offering funding?
+					<span data-ng-if='faqId16 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId16 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId16 == true' class='answer pure-u-1'>
+						<p>After the application has been submitted and we’ve completed the initial call, we’ll run our internal checks. This has no impact on your personal or company credit rating.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId17 = !faqId17" ng-init='faqId17 = false'>
+				<div>
+					<h3>Do I have to provide security or a guarantee on the funds?
+					<span data-ng-if='faqId17 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId17 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId17 == true' class='answer pure-u-1'>
+						<p>We offer unsecured lending via a Bill of Exchange. We don’t take title over the goods or a charge over the business. In rare cases we request a personal guarantee or cross company guarantee.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId18 = !faqId18" ng-init='faqId18 = false'>
+				<div>
+					<h3>What documentation do I need to provide?
+					<span data-ng-if='faqId18 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId18 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId18 == true' class='answer pure-u-1'>
+						<p>We require financial information to properly assess your business. This usually includes, for example, two years of full accounts, monthly management accounts for the past 12 months and a list of aged debtors and creditors.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId19 = !faqId19" ng-init='faqId19 = false'>
+				<div>
+					<h3>Can I use Wallex’s solution to pay all my suppliers?
+					<span data-ng-if='faqId19 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId19 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId19 == true' class='answer pure-u-1'>
+						<p>Yes, provided they are not related business entities (ie shared ownership), and they meet our supplier enrolment criteria. You can pay as many suppliers as you like this way once they sign our supplier payment guarantee framework agreement. Our facility can be used to make payments to any country worldwide – this includes to domestic suppliers.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId20 = !faqId20" ng-init='faqId20 = false'>
+				<div>
+					<h3>How long does it take to set up the facility?
+					<span data-ng-if='faqId20 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId20 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId20 == true' class='answer pure-u-1'>
+						<p>Once you have submitted all the required information the process usually takes two to three working days.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId21 = !faqId21" ng-init='faqId21 = false'>
+				<div>
+					<h3>How long will it take for the fund to be paid?
+					<span data-ng-if='faqId21 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId21 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId21 == true' class='answer pure-u-1'>
+						<p>Once you have your account funds take just one to two days to reach your suppliers.</p>
+					</div>
+				</div>
+			</a>
+			<a class='pure-u-1 faq' ng-click="faqId22 = !faqId22" ng-init='faqId22 = false'>
+				<div>
+					<h3>Can I repay in stages?
+					<span data-ng-if='faqId22 === false' class='icon-plus'></span>
+					<span data-ng-if='faqId22 === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId22 == true' class='answer pure-u-1'>
+						<p>Not on one single invoice, but if we make payments to multiple suppliers you can repay them individually.</p>
+					</div>
+				</div>
+			</a>
+			<!-- <a class='pure-u-1 faq' ng-click="faqId = !faqId" ng-init='faqId = false'>
+				<div>
+					<h3>
+					<span data-ng-if='faqId === false' class='icon-plus'></span>
+					<span data-ng-if='faqId === true' class='icon-minus'></span></h3>
+					<div ng-show='faqId == true' class='answer pure-u-1'>
+						<p></p>
+					</div>
+				</div>
+			</a> -->
+		</div>
+    <!--  -->
   </div>
 </section>

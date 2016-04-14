@@ -683,7 +683,34 @@ section {
     padding: 1em;
   }
   h2 {
-    margin: 1em 0;
+    margin: .5em 0 0;
+  }
+  h3 {
+    padding: 1em;
+    border-radius: 3px;
+    font-weight: 500;
+    background: #efefef;
+    margin: 1em 0 0;
+    position: relative;
+    &.active {
+      border-radius: 3px 3px 0 0;
+    }
+    span {
+      position: absolute;
+      right: 1em;
+      top: 1.2em;
+    }
+  }
+  .answer {
+    border: 1px solid #efefef;
+    border-radius: 0 0 3px 3px;
+    padding: 1em;
+    p {
+      margin-bottom: 1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   li {
     margin-bottom: .5em;
@@ -1128,6 +1155,10 @@ footer {
       text-align: left;
     }
   }
+  .page h3 {
+    padding: 1em 2em 1em 1em;
+  }
+
 }
 
 #slider {
