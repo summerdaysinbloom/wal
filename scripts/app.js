@@ -72,6 +72,12 @@ app
       keywords: 'Wallex FAQ',
       description: 'Wallex FAQ'
     })
+    .when('/blog', {
+      templateUrl: 'views/blog.html',
+      title: 'Wallex | Blog',
+      keywords: 'Wallex Blog',
+      description: 'Wallex Blog'
+    })
     .otherwise({
       redirectTo: '/'
     });
