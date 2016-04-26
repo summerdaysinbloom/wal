@@ -32,6 +32,12 @@ app
     window.scrollTo(0, 0);
   }
 )
+.controller('blogCtrl', 
+  function($scope, $location, $anchorScroll, $http, $timeout) {
+    console.log('[C] blogCtrl')
+    window.scrollTo(0, 0);
+  }
+)
 .controller('MainCtrl', function($scope, $location, $anchorScroll, $http, $timeout) {
 
         $http.get('/list.json', { cache: true })

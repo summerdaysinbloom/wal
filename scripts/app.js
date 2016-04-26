@@ -16,19 +16,28 @@ app
       
       if($location.path() == '/') {
         
+        $rootScope.showPagesHeader = false;
         $rootScope.showHeader = true;
       
       } else if($location.path() == '/sectors/importer-and-exporters') {
       
         $rootScope.showHeader = false;
+        $rootScope.showPagesHeader = true;
       
       } else if($location.path() == '/sectors/online-sellers') {
       
         $rootScope.showHeader = false;
+        $rootScope.showPagesHeader = true;
       
       } else if($location.path() == '/faq') {
+        
+        $rootScope.showHeader = false;
+        $rootScope.showPagesHeader = true;
+      
+      } else if($location.path() == '/blog') {
       
         $rootScope.showHeader = false;
+        $rootScope.showPagesHeader = true;
       
       }
 
@@ -74,6 +83,7 @@ app
     })
     .when('/blog', {
       templateUrl: 'views/blog.html',
+      controller: 'blogCtrl',
       title: 'Wallex | Blog',
       keywords: 'Wallex Blog',
       description: 'Wallex Blog'
