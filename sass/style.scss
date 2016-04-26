@@ -631,12 +631,6 @@ header {
   }
 }
 
-#blog-head {
-  position: absolute;
-  right: 0;
-  top: 1.8em;
-}
-
 #logo {
   background-image: url(../images/logo.png);
   background-position: 0 center;
@@ -724,16 +718,16 @@ section {
   }
 }
 
-
 .blog {
   .wrapper {
     padding: 1em;
   }
   h2 {
     font-size: 2em;
-    margin: 0 0 1em;
+    margin: 0 0 1em 0;
   }
   .author {
+    margin-bottom: 1em;
     text-align: right;
   }
 }
@@ -1108,15 +1102,6 @@ footer {
     z-index: 100;
   }
 
-  #blog-head {
-    background: #fff;
-    padding: 1em;
-    position: fixed;
-    right: 0;
-    top: .8em;
-    z-index: 100;
-  }
-
   #hero {
     .wrapper {
       padding: 3em 0;
@@ -1188,6 +1173,30 @@ footer {
   }
   .page h3 {
     padding: 1em 2em 1em 1em;
+  }
+
+  .blog {
+    h2 {
+      font-size: 1.6em;
+      margin: 0 0 1em 0;
+    }
+    .author {
+      border-bottom: 1px solid #ccc;
+      margin: 1em 0;
+      padding: 1em 0;
+      position: relative;
+      text-align: left;
+      &:before{
+        border-top: 1px solid $d-blue;
+        content: " ";
+        height: 0;
+        left: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 10px;
+      }
+    }
   }
 
 }
