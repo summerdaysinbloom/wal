@@ -1280,3 +1280,55 @@ footer {
   top: .65em;
   text-decoration-color: $blue;
 }
+
+// signup form
+#s-logo {
+  background: url(../images/logo.png) center center no-repeat;
+  background-size: 68px auto;
+  height: 66px;
+  margin-bottom: 1em;
+  text-indent: -999em;
+}
+#signup-form {
+  // height: -moz-calc(100% - 66px);
+  // height: -webkit-calc(100% - 66px);
+  // height: calc(100% - 66px);
+  background-image: url(../images/test.png);
+  background-position: cover cover;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+      position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  select {
+    max-width: 29%;
+    overflow: hidden;
+  }
+  > div {
+    height: 100%;
+    @include horizontal-center();
+    @include vertical-center();
+  }
+  form {
+    background: #fff;
+    border: 1px solid #ddd;
+    max-width: 800px;
+    padding: .5em 1em;
+    fieldset {
+      padding: 1em 2em !important;
+    }
+    input {
+      border:1px solid #ccc !important;
+    }
+  }
+  #verify-signup-msg {
+    div {
+      
+      border: 1px solid #ddd;
+      padding: 1em 2em;
+    }
+  }
+}

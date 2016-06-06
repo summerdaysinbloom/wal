@@ -39,6 +39,11 @@ app
         $rootScope.showHeader = false;
         $rootScope.showPagesHeader = true;
       
+      } else if($location.path() == '/login') {
+      
+        $rootScope.showHeader = false;
+        $rootScope.showPagesHeader = false;
+      
       }
 
     })
@@ -87,6 +92,13 @@ app
       title: 'Wallex | Blog',
       keywords: 'Wallex Blog',
       description: 'Wallex Blog'
+    })
+    .when('/login', {
+      templateUrl: 'views/login.html',
+      controller: 'loginCtrl',
+      title: 'Wallex | login',
+      keywords: 'Wallex login',
+      description: 'Wallex login'
     })
     .otherwise({
       redirectTo: '/'

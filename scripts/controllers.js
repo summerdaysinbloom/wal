@@ -38,6 +38,13 @@ app
     window.scrollTo(0, 0);
   }
 )
+.controller('loginCtrl', 
+  function($scope, $location, $anchorScroll, $http, $timeout) {
+    console.log('[C] loginCtrl')
+    window.scrollTo(0, 0);
+    // $rootScope.loginPage = true;
+  }
+)
 .controller('MainCtrl', function($scope, $location, $anchorScroll, $http, $timeout) {
 
         $http.get('/list.json', { cache: true })

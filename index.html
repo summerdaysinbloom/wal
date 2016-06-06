@@ -26,11 +26,11 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <header id='header' ng-controller='scrollCtrl'>
+  <header id='header' ng-controller='scrollCtrl' ng-show='showHeader === true'>
     <div class='wrapper pure-g'>
       <a class='pure-u-1-4' href="#/" id='logo'>WallEx</a>
       <div id='h-main' class='pure-u-1 pure-u-md-3-4 pure-u-lg-3-4 pure-u-xl-3-4' data-ng-class="{active: toggleMenuList === true}">
-        <div ng-show='showHeader === true'>
+        <div>
           <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="about" du-scrollspy>Why WallEx</a>
           <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="howitworks" du-scrollspy>How it works</a>
           <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="sectors" du-scrollspy>Sectors</a>
@@ -38,6 +38,7 @@
           <a ng-click='toggleMenuList = !toggleMenuList; scroll()' href='#/faq'>FAQ</a>
           <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="contact" du-scrollspy>Contact</a>
           <!-- <a href="http://66.96.194.72:8080/account#/login">login</a> -->
+           <a href='#/login'>login</a>
         </div>
         <div ng-show='showPagesHeader === true'>
           <a ng-click='toggleMenuList = !toggleMenuList; scroll()' href='#/'>Home</a>
