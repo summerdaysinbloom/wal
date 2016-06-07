@@ -1,0 +1,69 @@
+<div id='signup-form' class='pure-u-1'>
+    <div>
+      <form ng-submit='signup()' class="pure-form pure-form-aligned" ng-show='userSignupStep == 1' ng-init="userSignupStep=1">
+        <fieldset>
+          <h1 id='s-logo'>Wallex</h1>
+          <div class='alert no-border' ng-class='{ "error" : updateError, "update": updateSuccess }' >
+            <p>{{alertMsg}}</p>
+          </div>
+          <div class="pure-control-group">
+            <label>Enter your email address</label>
+            <input type="email" ng-model='mEmail' id="email" name="email" required/>
+          </div>
+ 
+          <div class="pure-control-group">
+            <label>Password</label>
+            <input type="password" ng-model='mPass' id="password" name="password" required/>
+          </div>
+  
+          <div class="pure-control-group">
+            <label>Re-enter password</label>
+            <input type="password" ng-model='mRpPass' id="password2" name="password2" required/>
+          </div>
+  
+          <div class="pure-control-group">
+            <label>Given Name</label>
+            <input type="text" ng-model='mGivenName' id="first_name" name="first_name" required/>
+          </div>
+  
+          <div class="pure-control-group">
+            <label>Surname/Family Name</label>
+            <input type="text" ng-model='mSurname' id="last_name" name="last_name" required/>
+          </div>
+  
+          <div class="pure-control-group">
+            <label>Mobile Country Code</label>
+            <select id="mobile_country_code" name="mobile_country_code" ng-model="mobile_countries.selected_country">
+              <!-- <option selected="selected" value="+65">Singapore +65</option>
+              <option value="+60">Malaysia +60</option> -->
+              <option ng-repeat="c in mobile_countries.countries" value="{{c.itu_telephone_code}}">{{c.common_name}} {{c.itu_telephone_code}}</option>
+            </select>
+          </div>
+          <div class="pure-control-group">
+            <label>Mobile Telephone</label>
+            <input type="text" ng-model='mMobile' id="mobile_telephone" name="mobile_telephone" required/>
+          </div>
+
+          <div class="pure-control-group">
+            <label>Country</label>
+            <select id="country" name="country" ng-model="countries.selected_country">
+              <option ng-repeat="c in countries.countries" value="{{c.iso_3166_two_letter_code}}">{{c.common_name}}</option>
+            </select>
+          </div>
+
+          <div class="pure-control-group">
+             <button type="submit" class="pure-button pure-button-primary">Sign up</button>
+          </div>
+
+        </fieldset>
+      </form>
+      <div id='verify-signup-msg' ng-show="userSignupStep == 2">
+        <div>
+          <h1 id='s-logo'>Wallex</h1>
+          <p>Hello, {{mGivenName}} {{mSurname}} ! Please verify your email from link sent !</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>

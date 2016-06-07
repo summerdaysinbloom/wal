@@ -47,6 +47,8 @@ app
 )
 .controller('MainCtrl', function($scope, $location, $anchorScroll, $http, $timeout) {
 
+
+
         $http.get('/list.json', { cache: true })
         	.success(function(data) {
         	    $scope.list = data;

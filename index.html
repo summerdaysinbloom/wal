@@ -38,7 +38,7 @@
           <a ng-click='toggleMenuList = !toggleMenuList; scroll()' href='#/faq'>FAQ</a>
           <a ng-click='toggleMenuList = !toggleMenuList' du-smooth-scroll="contact" du-scrollspy>Contact</a>
           <!-- <a href="http://66.96.194.72:8080/account#/login">login</a> -->
-           <!-- <a href='#/login'>login</a> -->
+          <a id='login-btn' href='#/login'>login</a>
         </div>
         <div ng-show='showPagesHeader === true'>
           <a ng-click='toggleMenuList = !toggleMenuList; scroll()' href='#/'>Home</a>
@@ -73,6 +73,19 @@
   <script src='scripts/app.js'></script>
   <script src='scripts/controllers.js'></script>
   <script src='scripts/services.js'></script>
+<!--   <script>
+    
+  function stickyscroll(e) {
+    if(window.pageYOffset > 100) {
+      console.log('pageYOffset', pageYOffset)
+      var xxx = document.getElementById('login-btn');
+      xxx.classList.add('hello');
+    }
+  }
+
+  window.addEventListener('scroll',stickyscroll, false); 
+
+  </script> -->
 
 </body>
 </html>
